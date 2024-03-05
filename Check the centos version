@@ -1,0 +1,5 @@
+#To check the CentOS version:
+
+
+cat /etc/redhat-release
+
