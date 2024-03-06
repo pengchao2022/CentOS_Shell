@@ -1,0 +1,12 @@
+#centos to install ntp chrony
+
+sudo yum install chrony
+
+#allow chrony in the firewall
+
+sudo firewall-cmd --add-service=ntp --permanent
+sudo firewall-cmd --reload
+
+#Check Time Synchronization with NTP
+
+chronyc sources
