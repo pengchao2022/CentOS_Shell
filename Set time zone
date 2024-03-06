@@ -1,0 +1,8 @@
+#centos set the time zone to Asia/Shanghai
+
+sudo timedatectl set-timezone Asia/Shanghai
+
+#check the current time zone
+
+timedatectl 
+
