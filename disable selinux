@@ -1,0 +1,5 @@
+#centos to disable the selinux
+
+  sudo vi /etc/selinux/config
+
+  change to disable
