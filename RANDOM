@@ -1,0 +1,5 @@
+#利用 RANDOM 函数生成9个字符用作密码
+
+echo $RANDOM | md5sum | cut -c 1-9
+
+
