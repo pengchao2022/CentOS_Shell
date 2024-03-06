@@ -1,0 +1,4 @@
+#Centos history command to show username and login time
+
+export HISTTIMEFORMAT="%F %T '$(whoami)' "
+
