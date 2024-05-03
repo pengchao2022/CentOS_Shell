@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Author: pengchao
+#Copyright (c) mywebsite.com
+#Scrits follows here:
+
+echo "What's your name?"
+read PERSON
+echo "Hello,$PERSON"
+
+
