@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Author: pengchao
+#Copyright(c) mywebsite.com
+#sctipt follows here:
+
+echo "your current path is:$(pwd)"
+
+echo "Today is:$(date)"
+
+echo "there are following folders or files here:$(ls)"
+
+
