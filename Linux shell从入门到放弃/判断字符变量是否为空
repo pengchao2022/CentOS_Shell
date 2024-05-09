@@ -1,0 +1,12 @@
+
+[root@centosx ~]# STRING=''; [ -z "$STRING" ]; echo $?
+0
+
+z 是指 是否你的变量为空 如果返回值为 0 说明变量是空的 
+
+[root@centosx ~]# STRING=''; [ -n "$STRING" ]; echo $?
+1
+
+n 是指 是否你的变量不为空，如果变量非空 返回值为 0 如果变量为空，返回值为 1
+
+
