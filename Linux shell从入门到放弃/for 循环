@@ -1,0 +1,10 @@
+for 循环举例：
+
+#!/bin/bash
+
+for HOST in host{1..40};
+do
+    echo $HOST;
+
+done
+
