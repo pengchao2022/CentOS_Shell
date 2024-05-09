@@ -1,0 +1,39 @@
+shell 创建10 个新用户，然后密码都是 redhat
+
+
+#!/bin/bash
+
+for i in {20..30};
+
+do
+
+    useradd user$i
+
+    echo "redhat" | passwd --stdin user$i;
+
+done
+
+
+[root@centosx ~]# ./user20withpasswd.sh 
+Changing password for user user20.
+passwd: all authentication tokens updated successfully.
+Changing password for user user21.
+passwd: all authentication tokens updated successfully.
+Changing password for user user22.
+passwd: all authentication tokens updated successfully.
+Changing password for user user23.
+passwd: all authentication tokens updated successfully.
+Changing password for user user24.
+passwd: all authentication tokens updated successfully.
+Changing password for user user25.
+passwd: all authentication tokens updated successfully.
+Changing password for user user26.
+passwd: all authentication tokens updated successfully.
+Changing password for user user27.
+passwd: all authentication tokens updated successfully.
+Changing password for user user28.
+passwd: all authentication tokens updated successfully.
+Changing password for user user29.
+passwd: all authentication tokens updated successfully.
+Changing password for user user30.
+passwd: all authentication tokens updated successfully.
