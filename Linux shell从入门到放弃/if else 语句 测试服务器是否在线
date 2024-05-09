@@ -13,3 +13,23 @@ else
         echo "the server is offline now"
 
 fi
+
+-----------------------------------------
+
+测试www.baidu.com 是否在线：
+
+#!/bin/bash
+
+ping -c 2 www.baidu.com &> /dev/null
+
+if [ $0 == 0 ]; then
+
+	echo "baidu is online now"
+
+else
+
+	echo "baidu is offline now"
+
+fi
+
+
