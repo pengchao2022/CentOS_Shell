@@ -8,3 +8,36 @@ do
 
 done
 
+--------------------------
+例题： 创建10个用户的shell 脚本：
+
+[root@centosx ~]# vim user10.sh
+[root@centosx ~]# 
+[root@centosx ~]# 
+[root@centosx ~]# chmod +x user10.sh 
+[root@centosx ~]# ./user10.sh 
+[root@centosx ~]# tail -10 /etc/passwd
+user1:x:1084:1085::/home/user1:/bin/bash
+user2:x:1085:1086::/home/user2:/bin/bash
+user3:x:1086:1087::/home/user3:/bin/bash
+user4:x:1087:1088::/home/user4:/bin/bash
+user5:x:1088:1089::/home/user5:/bin/bash
+user6:x:1089:1090::/home/user6:/bin/bash
+user7:x:1090:1091::/home/user7:/bin/bash
+user8:x:1091:1092::/home/user8:/bin/bash
+user9:x:1092:1093::/home/user9:/bin/bash
+user10:x:1093:1094::/home/user10:/bin/bash
+[root@centosx ~]# cat user10.sh 
+#!/bin/bash
+
+for i in {1..10};
+
+do
+
+      useradd user$i;
+
+done
+
+
+
+
