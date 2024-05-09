@@ -1,0 +1,18 @@
+if else 命令测试服务是否在运行，没有运行的话重启服务
+
+#!/bin/bash
+
+ps -ef | grep vsftpd | grep -v grep
+
+if [ $? == 0 ]; then
+
+	echo "ftp server is running"
+
+else
+       
+        echo "ftp server is not running, we are tring to start the service now"
+	systemctl start vsftpd
+        sleep 3
+        echo "finished"
+fi
+
