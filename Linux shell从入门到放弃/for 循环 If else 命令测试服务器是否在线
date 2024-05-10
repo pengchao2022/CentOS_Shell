@@ -1,0 +1,22 @@
+#!/bin/bash
+
+for i in {10..100};
+
+do
+
+	ping -c3 10.10.10.$i &> /dev/null
+
+        if [ $? -eq 0 ]; then
+            
+                 echo "the 10.10.10.$i is up"
+      
+        else
+    
+                 echo "the 10.10.10.$i is down"
+       
+        fi
+
+done
+
+echo "ping test is finished!"
+
