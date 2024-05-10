@@ -1,0 +1,17 @@
+Linux 服务器 每隔一分钟备份一次/home 目录到 /tmp 目录下
+  
+编辑 shell 备份脚本：
+[root@centosx ~]# cat tar.sh 
+#!/bin/bash
+
+tar -jcvf /tmp/home.tar.bz2.$(date +%Y_%m_%d_%H:%M:%S) /home
+
+
+[root@centosx ~]# 
+
+设置定时任务：
+
+[root@centosx ~]# crontab -l  ------显示定时任务， 如果要编辑，需要 用 crontab -e 命令
+*/1 * * * * /root/tar.sh
+
+  
