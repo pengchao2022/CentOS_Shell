@@ -1,0 +1,15 @@
+此题目用于统计变量的长度：
+
+#!/bin/bash
+
+VAR=3.1415926789349
+
+length=${#VAR}
+
+echo $length
+
+
+执行结果：
+
+[pengchao@control linux_shell_scripts]$ ./length.sh 
+15
