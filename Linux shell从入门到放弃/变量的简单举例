@@ -1,0 +1,15 @@
+此题目是关于变量的一个简单举例：
+
+#!/bin/bash
+
+fruit=apple
+
+count=5
+
+echo "we have $count ${fruit}(s)"
+
+
+运行结果：
+
+[pengchao@control linux_shell_scripts]$ ./fruvar.sh 
+we have 5 apple(s)
