@@ -1,0 +1,18 @@
+此shell 程序在判断用户是否为超级管理员用户：
+
+#!/bin/bash
+
+if [ $UID -ne 0 ]; then
+
+    echo "not root user"
+
+else
+
+    echo "this is a root user"
+fi
+
+
+执行测试：
+
+[pengchao@control linux_shell_scripts]$ ./checkroot.sh 
+not root user
