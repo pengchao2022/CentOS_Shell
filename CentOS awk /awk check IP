@@ -1,0 +1,4 @@
+
+
+[ansible@ansible01 ~]$ ifconfig ens192 | grep inet | grep -v inet6 | awk '{print $2}'
+10.132.2.5
